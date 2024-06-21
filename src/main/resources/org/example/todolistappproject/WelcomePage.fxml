@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #f6d1d9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.todolistappproject.WelcomePageController">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0">
+    <children>
+        <VBox alignment="CENTER" layoutX="-3.0" layoutY="-7.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="807.0" prefWidth="497.0" spacing="10.0" style="-fx-background-color: #2e0e15;" stylesheets="@../../../styles.css">
+            <Label text="Welcome to Taskly!" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="37.0" />
+            </font>
+            </Label>
+            <Label prefHeight="0.0" prefWidth="128.0" text="Your day, Organised...." textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Button onAction="#goToSignUpPage" prefHeight="25.0" prefWidth="318.0" style="-fx-background-color: #f6d1d9;" stylesheets="@../../../styles.css" text="SIGN UP ">
+            <font>
+               <Font name="System Italic" size="12.0" />
+            </font></Button>
+            <Label prefHeight="5.0" prefWidth="17.0" text="OR" textFill="WHITE" />
+            <Button layoutX="54.0" layoutY="357.0" onAction="#goToSignInPage" prefHeight="25.0" prefWidth="318.0" style="-fx-background-color: #f6d1d9;" stylesheets="@../../../styles.css" text="SIGN IN">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+        </VBox>
+      <ImageView fitHeight="338.0" fitWidth="497.0" layoutX="504.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/todolist.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
+</VBox>

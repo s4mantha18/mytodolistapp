@@ -1,0 +1,68 @@
+/* General styling for the entire application */
+.root {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+/* TextField styling */
+.text-field {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+/* Button styling */
+.button {
+    -fx-cursor: hand;
+    -fx-border-radius: 10;
+
+}
+
+.buttonbox{
+       -fx-border-color:white;
+       -fx-text-fill:white;
+       -fx-prompt-text-fill:white;
+}
+
+.taskbox{
+    -fx-border-color:white;
+    -fx-border-radius: 10;
+    -fx-prompt-text-fill:gray;
+}
+
+.button:hover {
+    -fx-background-color: #ffffff;
+}
+
+ListView{
+    -fx-background-color: #f6d1d9;
+    -fx-padding: 10px; /* Padding around the list items */
+}
+
+ComboBox{
+    -fx-background-color: #f6d1d9;
+}
+
+/* Style for the items in the ListView */
+.list-cell {
+    -fx-padding: 5px 10px; /* Padding inside each item */
+    -fx-text-fill: #333; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: "Arial"; /* Font family */
+}
+
+/* Style for selected items in the ListView */
+.list-cell:selected {
+    -fx-background-color: #cce6ff; /* Background color of selected item */
+    -fx-text-fill: black; /* Text color of selected item */
+}
+.list-cell.completed {
+    -fx-text-fill: grey;
+    -fx-strikethrough: true;
+}
+
+.textbox{
+    -fx-text-fill: black;
+    -fx-border-radius:8;
+    -fx-border-color: #ffffff;
+}
+
